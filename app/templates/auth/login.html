@@ -7,6 +7,10 @@
 </head>
 <body>
     <h1>Login</h1>
+
+    {% if request.query_params.get("cadastro") == ok %}
+        <p style="color: rgb(17, 145, 17);">Cadastro realizado! Faça login</p>
+
     <form action="/auth/login" method="post">
         Email: <input type="email" name="email" required>
         <br>
