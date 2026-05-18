@@ -10,6 +10,7 @@
 
     {% if request.query_params.get("cadastro") == ok %}
         <p style="color: rgb(17, 145, 17);">Cadastro realizado! Faça login</p>
+    {% endif %}
 
     <form action="/auth/login" method="post">
         Email: <input type="email" name="email" required>
